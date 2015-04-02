@@ -1,0 +1,103 @@
+---
+title: "Introductory Excel Material"
+author: "Albrecht Gradmann"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: rmarkdown::tufte_handout
+classoption: a4paper
+---
+
+```{r setup,include=FALSE}
+library(knitr)
+opts_chunk$set(message=FALSE,results='hide')
+#opts_knit$set(root.dir=normalizePath('../'))
+```
+
+
+
+
+# Some Excel Terminology
+
+\begin{figure}
+\label{fig:Terminology}
+\includegraphics[width=12cm]{resources/Terminology.png}
+\caption{Some useful terminology when talking about Excel.}
+\end{figure}
+
+# General Design principles and concepts
+Excel is an extremely versatile tool. Although there are only few prescription how to do specific tasks in Excel, many of the more advanced tools expect a specific 
+
+1. Separate inputs, calculations and results[^DTP]
+2. Use one formula per row or column 
+3. Refer to the left and above
+4. Use multiple worksheets...
+\begin{enumerate}
+   \item For ease of expansion
+   \item For repeatable blocks
+   \item
+\end{enumerate}
+5. Use each column for the same purpose throughout the model
+6. Include a documentation sheet
+
+## Columns are variables and rows are records
+
+## Excel Variable types and associated pitfalls
+
+<!-- References used in this section --> 
+[^EusprigGuide]: Spreadsheet modelling best practice by Nick Read and Jonath
+an Batson http://www.eusprig.org/smbp.pdf
+[^DTP]: Chris Gemignani calls this the DTP principle which refers to the separation of **D**ata, **T**ransformation and **P**resentation. http://www.juiceanalytics.com/writing/delivering-data-excel-dtp-framework
+
+
+# Important Hotkeys
+In the table below you will find the hotkeys I most frequently use when working with MS-Excel.  There are numerous others and you can find nicely formatted 'cheat-sheets' on the internet[^cheatSheet]. Note that the hotkey combinations are also displayed when hovering with the mouse over a menu-item. While most of the actions triggered by the hotkeys can be accessed through menues or window elements, knowing them will be a time-saver in the long run.  
+
+
+Hotkey        | Usage
+------------- | -------------
+`F2`          | Edit active cell (NB color-code of references)
+`F4`          | Cycles through Cell-reference modes
+``Strg + ` `` | Toggles Formula (the symbol is a 'backtick')
+`Strg + pageup`| Move to next tab
+`Strg + pagedown`| Move to previous tab
+` Alt + E|S|T` | Paste Special Menu  
+`Strg + ;`     | Insert current date
+`Strg + :`    | Insert current time
+
+
+<!-- References used in this section --> 
+[^cheatSheet]:  I like this one. https://www.macabacus.com/ExcelShortcuts.pdf
+
+
+# Cell References
+On an Excel worksheet each cell can be referenced by a combination of a letter and a number where the letter designates the column and the number the row of the specified cell. The name of the current cell is usually displayed in the name box on the left hand side below the ribbon.
+
+The figure below shows how different types of cell reference produce different results when copied.
+
+\begin{figure}
+\label{fig:References}
+\includegraphics[width=11cm]{resources/References.png}
+\caption{Copying different types of cell references.}
+\end{figure}
+
+# Functions
+Think of a function as a black box that carries out some task for you. 
+
+Distinguish obligatory and optional arguments. Obligatory arguments are necessary to completely define the task
+
+
+
+Formula Name        | Description
+------------- | -------------
+`=VLOOKUP()`          | asdf
+`=SUM()`          | asdf
+
+# Charting
+
+
+# Further resources
+
+
+<!-- References used in this section --> 
+[^Chandoo]: Chandoo.org is a great collection of useful Excel snippets and hints. http://chandoo.org/wp/
+
+
